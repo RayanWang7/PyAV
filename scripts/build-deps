@@ -26,9 +26,9 @@ fi
 mkdir -p "$PYAV_LIBRARY_ROOT"
 mkdir -p "$PYAV_LIBRARY_PREFIX"
 
-sudo apt-get update
-sudo apt-get install build-essential yasm libvpx. libx264. cmake libtool libc6 libc6-dev unzip wget libnuma1 libnuma-dev nvidia-cuda-toolkit
-sudo apt-get -y install pkg-config
+apt-get update
+apt-get install build-essential yasm libvpx. libx264. cmake libtool libc6 libc6-dev unzip wget libnuma1 libnuma-dev nvidia-cuda-toolkit
+apt-get -y install pkg-config
 
 # Nvidia build
 CONFFLAGS_NVIDIA=""
@@ -39,7 +39,7 @@ CONFFLAGS_NVIDIA=""
         git clone https://github.com/FFmpeg/nv-codec-headers.git
         cd nv-codec-headers
         make
-        sudo make install
+        make install
     fi
 
     PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH"
