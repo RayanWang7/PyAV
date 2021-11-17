@@ -27,7 +27,7 @@ mkdir -p "$PYAV_LIBRARY_ROOT"
 mkdir -p "$PYAV_LIBRARY_PREFIX"
 
 apt-get update
-apt-get install build-essential yasm libvpx. libx264. cmake libtool libc6 libc6-dev unzip wget libnuma1 libnuma-dev nvidia-cuda-toolkit
+apt-get install build-essential yasm libvpx. libx264. cmake libtool libc6 libc6-dev unzip wget libnuma1 libnuma-dev nvidia-container-toolkit
 apt-get -y install pkg-config
 
 # Nvidia build
